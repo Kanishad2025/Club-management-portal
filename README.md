@@ -1,70 +1,206 @@
-# Getting Started with Create React App
+<div align="center">
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 🎓 Club Management Portal
 
-## Available Scripts
+### A Full-Stack MERN Web Application for College Club Management
 
-In the project directory, you can run:
+A modern platform designed to streamline club administration, event management, announcements, and student participation.
 
-### `npm start`
+![React](https://img.shields.io/badge/React-Frontend-61DAFB?logo=react)
+![Node.js](https://img.shields.io/badge/Node.js-Backend-339933?logo=node.js)
+![Express](https://img.shields.io/badge/Express.js-Framework-000000?logo=express)
+![MongoDB](https://img.shields.io/badge/MongoDB-Atlas-47A248?logo=mongodb)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+</div>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+# 📖 Overview
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The **Club Management Portal** is a full-stack web application developed to simplify the management of college clubs and student activities.
 
-### `npm run build`
+The platform enables students to discover clubs, register for events, and stay updated with announcements, while coordinators and administrators can efficiently manage clubs, events, meetings, and user activities through dedicated dashboards.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# ✨ Features
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 👨‍🎓 Student Module
 
-### `npm run eject`
+- Student Registration & Login
+- Browse Clubs
+- View Club Details
+- Register for Events
+- View Announcements
+- Student Dashboard
+- Contact Club Coordinators
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 👨‍💼 Coordinator Module
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Coordinator Dashboard
+- Create & Manage Events
+- Publish Announcements
+- View Student Registrations
+- Manage Club Activities
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## 👨‍💻 Admin Module
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Admin Dashboard
+- Manage Clubs
+- Manage Users
+- Manage Events
+- Publish Announcements
+- Monitor Student Registrations
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+# 🛠 Tech Stack
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Frontend
 
-### Analyzing the Bundle Size
+- React.js
+- React Router
+- Axios
+- HTML5
+- CSS3
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Backend
 
-### Making a Progressive Web App
+- Node.js
+- Express.js
+- MongoDB Atlas
+- Mongoose
+- JWT Authentication
+- bcrypt.js
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+# 📂 Project Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```text
+Club-management-portal
+│
+├── backend/
+│   ├── config/
+│   ├── controllers/
+│   ├── middleware/
+│   ├── models/
+│   ├── routes/
+│   └── server.js
+│
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── pages/
+│   ├── styles/
+│   └── utils/
+│
+├── package.json
+├── package-lock.json
+├── README.md
+└── .gitignore
+```
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+# 🚀 Installation
 
-### `npm run build` fails to minify
+### Clone the Repository
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+git clone https://github.com/Kanishad2025/Club-management-portal.git
+```
+
+### Install Frontend Dependencies
+
+```bash
+npm install
+```
+
+### Install Backend Dependencies
+
+```bash
+cd backend
+npm install
+```
+
+### Configure Environment Variables
+
+Create a `.env` file inside the `backend` folder.
+
+```env
+PORT=5000
+
+MONGO_URI=your_mongodb_connection_string
+
+JWT_SECRET=your_secret_key
+```
+
+### Start the Backend
+
+```bash
+cd backend
+npm run dev
+```
+
+### Start the Frontend
+
+```bash
+npm start
+```
+
+---
+
+# 🔐 Authentication
+
+- JWT-based Authentication
+- Password Encryption using bcrypt
+- Protected Routes
+- Role-Based Authorization
+
+---
+
+# 🎯 Future Enhancements
+
+- Email Notifications
+- QR Code Event Check-In
+- Attendance Tracking
+- Certificate Generation
+- Club Analytics Dashboard
+- Mobile Responsive UI
+- Dark Mode Support
+
+---
+
+# 🤝 Contributing
+
+Contributions are welcome!
+
+1. Fork the repository.
+2. Create a new branch.
+3. Commit your changes.
+4. Push to your branch.
+5. Open a Pull Request.
+
+---
+
+# 👩‍💻 Author
+
+### **Kanisha D**
+
+- GitHub: https://github.com/Kanishad2025
+
+---
+
+<div align="center">
+
+⭐ If you found this project useful, please consider giving it a star.
+
+Made with ❤️ by **Kanisha D**
+
+</div>
