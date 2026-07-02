@@ -1,0 +1,479 @@
+/* ===========================
+   RESET
+=========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* ===========================
+     BODY
+  =========================== */
+  
+  body {
+    background: linear-gradient(135deg, #533B4D, #F564A9);
+    min-height: 100vh;
+    color: white;
+  }
+  
+  /* ===========================
+     HEADER
+  =========================== */
+  
+  .dashboard-header {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    background: rgba(0, 0, 0, 0.25);
+  }
+
+  .header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+  }
+
+  .header-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .vit-logo-dashboard {
+    height: 50px;
+    width: auto;
+    border-radius: 5px;
+  }
+
+  .header-left h2 {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: left;
+  }
+
+  .header-right {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .nav-btn {
+    background: white;
+    color: #F564A9;
+    text-decoration: none;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s ease;
+  }
+
+  .nav-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  }
+
+  .logout-btn {
+    background: white;
+    color: #F564A9;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s ease;
+  }
+  
+  .logout-btn:hover {
+    transform: scale(1.05);
+  }
+  
+  /* ===========================
+     MAIN CONTENT
+  =========================== */
+  
+  .dashboard-content {
+    padding: 60px;
+  }
+  
+  /* ===========================
+     CPI CARD
+  =========================== */
+  
+  .cpi-card {
+    background: white;
+    color: #333;
+    padding: 40px;
+    border-radius: 20px;
+    max-width: 500px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+  }
+  
+  .cpi-card h3 {
+    margin-bottom: 20px;
+    color: #F564A9;
+  }
+  
+  .cpi-score {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #533B4D;
+  }
+  
+  /* ===========================
+     BUTTONS (Future Expansion)
+  =========================== */
+  
+  .action-btn {
+    background: #F564A9;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.3s ease;
+  }
+  
+  .action-btn:hover {
+    background: #FAA4BD;
+  }
+
+  /* Coordinator Grid Layout */
+  .coordinator-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+    margin-bottom: 40px;
+  }
+
+  .cpi-section h3,
+  .activity-graph-section h3,
+  .calendar-section h3 {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+  }
+
+  .memberCountBox {
+    background: white;
+    color: #333;
+    padding: 15px;
+    border-radius: 10px;
+  }
+
+  .memberCountBox p {
+    margin: 8px 0;
+    color: #F564A9;
+  }
+
+  /* Activity Graph Section */
+  .activity-graph-section {
+    background: rgba(255,255,255,0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  }
+
+  .activity-chart {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    gap: 15px;
+    align-items: flex-end;
+    height: 250px;
+  }
+
+  .chart-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+  }
+
+  .bar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 200px;
+    width: 100%;
+    background: rgba(255,255,255,0.1);
+    border-radius: 5px 5px 0 0;
+    position: relative;
+  }
+
+  .bar {
+    width: 80%;
+    border-radius: 5px 5px 0 0;
+    transition: 0.3s ease;
+    min-height: 10px;
+  }
+
+  .bar-container:hover .bar {
+    opacity: 0.8;
+  }
+
+  .bar-value {
+    font-size: 0.8rem;
+    color: white;
+    margin-top: 8px;
+    font-weight: 600;
+  }
+
+  .month-label {
+    color: white;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-top: 8px;
+  }
+
+  /* Calendar Styles */
+  .calendar {
+    background: white;
+    color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  }
+
+  .calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .calendar-header button {
+    background: #F564A9;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: 0.3s ease;
+  }
+
+  .calendar-header button:hover {
+    background: #FAA4BD;
+  }
+
+  .calendar-header h4 {
+    margin: 0;
+    color: #F564A9;
+  }
+
+  .calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    margin-bottom: 10px;
+  }
+
+  .calendar-day-header {
+    text-align: center;
+    font-weight: bold;
+    color: #F564A9;
+    padding: 10px 0;
+  }
+
+  .calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+  }
+
+  .calendar-empty {
+    background: #f5f5f5;
+    min-height: 50px;
+  }
+
+  .calendar-day {
+    background: #f9f9f9;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+
+  .calendar-day:hover {
+    background: #e8e8e8;
+  }
+
+  .calendar-day.has-event {
+    background: #f3e5ff;
+    border: 2px solid #F564A9;
+  }
+
+  .event-indicator {
+    position: absolute;
+    bottom: 5px;
+    width: 6px;
+    height: 6px;
+    background: #F564A9;
+    border-radius: 50%;
+  }
+
+  /* Event Form Section */
+  .event-form-section {
+    background: white;
+    color: #333;
+    padding: 30px;
+    border-radius: 15px;
+    margin: 30px 0;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  }
+
+  .event-form-section h3 {
+    color: #F564A9;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #F564A9;
+    font-weight: 600;
+  }
+
+  .form-group input,
+  .form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: 0.3s ease;
+  }
+
+  .form-group input:focus,
+  .form-group select:focus {
+    outline: none;
+    border-color: #F564A9;
+    box-shadow: 0 0 10px rgba(245, 100, 169, 0.2);
+  }
+
+  .submit-btn {
+    background: #F564A9;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+
+  .submit-btn:hover {
+    background: #FAA4BD;
+    transform: translateY(-2px);
+  }
+
+  /* Events Section */
+  .events-section {
+    background: rgba(255,255,255,0.1);
+    padding: 30px;
+    border-radius: 15px;
+    margin-top: 30px;
+  }
+
+  .events-section h3 {
+    color: white;
+    margin-bottom: 20px;
+  }
+
+  .events-list-coordinator {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 20px;
+  }
+
+  .event-card-coordinator {
+    background: white;
+    color: #333;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  }
+
+  .event-card-coordinator h4 {
+    color: #F564A9;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+  }
+
+  .event-details {
+    font-size: 0.9rem;
+    line-height: 1.8;
+    margin-bottom: 15px;
+  }
+
+  .event-details p {
+    margin: 5px 0;
+    color: #555;
+  }
+
+  .status {
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 4px;
+  }
+
+  .status.upcoming {
+    background: #e3f2fd;
+    color: #1976d2;
+  }
+
+  .status.ongoing {
+    background: #fff3e0;
+    color: #f57c00;
+  }
+
+  .status.completed {
+    background: #e8f5e9;
+    color: #388e3c;
+  }
+
+  .delete-btn {
+    background: #7b1fa2;
+    color: #ffffff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    width: 100%;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    box-shadow: 0 3px 8px rgba(123, 31, 162, 0.25);
+  }
+
+  .delete-btn:hover {
+    background: #6a1b9a;
+    transform: translateY(-1px);
+  }
+
+  @media (max-width: 1024px) {
+    .coordinator-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
