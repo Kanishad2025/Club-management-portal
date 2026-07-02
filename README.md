@@ -193,14 +193,12 @@ Contributions are welcome!
 
 ### **Kanisha D**
 
-- GitHub: https://github.com/Kanishad2025
+
 
 ---
 
 <div align="center">
 
-⭐ If you found this project useful, please consider giving it a star.
 
-Made with ❤️ by **Kanisha D**
 
 </div>
