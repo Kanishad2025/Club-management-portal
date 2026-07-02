@@ -4,12 +4,13 @@
 
 ### A Full-Stack MERN Web Application for College Club Management
 
-A modern platform designed to streamline club administration, event management, announcements, and student participation.
+A modern web application that simplifies club administration, event management, announcements, and student participation through role-based dashboards.
 
 ![React](https://img.shields.io/badge/React-Frontend-61DAFB?logo=react)
 ![Node.js](https://img.shields.io/badge/Node.js-Backend-339933?logo=node.js)
-![Express](https://img.shields.io/badge/Express.js-Framework-000000?logo=express)
+![Express.js](https://img.shields.io/badge/Express.js-Framework-000000?logo=express)
 ![MongoDB](https://img.shields.io/badge/MongoDB-Atlas-47A248?logo=mongodb)
+![License](https://img.shields.io/badge/License-MIT-blue)
 
 </div>
 
@@ -17,9 +18,9 @@ A modern platform designed to streamline club administration, event management, 
 
 # 📖 Overview
 
-The **Club Management Portal** is a full-stack web application developed to simplify the management of college clubs and student activities.
+The **Club Management Portal** is a full-stack web application designed to simplify the management of college clubs and student activities.
 
-The platform enables students to discover clubs, register for events, and stay updated with announcements, while coordinators and administrators can efficiently manage clubs, events, meetings, and user activities through dedicated dashboards.
+The system provides dedicated dashboards for **Students**, **Coordinators**, and **Administrators**, allowing efficient management of clubs, events, meetings, announcements, and registrations through an intuitive interface.
 
 ---
 
@@ -27,10 +28,10 @@ The platform enables students to discover clubs, register for events, and stay u
 
 ## 👨‍🎓 Student Module
 
-- Student Registration & Login
-- Browse Clubs
+- Secure Registration & Login
+- Browse Available Clubs
 - View Club Details
-- Register for Events
+- Register for Club Events
 - View Announcements
 - Student Dashboard
 - Contact Club Coordinators
@@ -58,7 +59,7 @@ The platform enables students to discover clubs, register for events, and stay u
 
 ---
 
-# 🛠 Tech Stack
+# 🛠️ Technology Stack
 
 ### Frontend
 
@@ -90,7 +91,9 @@ Club-management-portal
 │   ├── middleware/
 │   ├── models/
 │   ├── routes/
-│   └── server.js
+│   ├── utils/
+│   ├── server.js
+│   └── package.json
 │
 ├── public/
 ├── src/
@@ -98,40 +101,54 @@ Club-management-portal
 │   ├── components/
 │   ├── pages/
 │   ├── styles/
-│   └── utils/
+│   ├── utils/
+│   ├── App.js
+│   └── index.js
 │
+├── images/
 ├── package.json
-├── package-lock.json
 ├── README.md
 └── .gitignore
 ```
 
 ---
 
-# 🚀 Installation
+# 🚀 Getting Started
 
-### Clone the Repository
+## Clone the Repository
 
 ```bash
 git clone https://github.com/Kanishad2025/Club-management-portal.git
 ```
 
-### Install Frontend Dependencies
+Move into the project directory
+
+```bash
+cd Club-management-portal
+```
+
+---
+
+## Install Frontend Dependencies
 
 ```bash
 npm install
 ```
 
-### Install Backend Dependencies
+---
+
+## Install Backend Dependencies
 
 ```bash
 cd backend
 npm install
 ```
 
-### Configure Environment Variables
+---
 
-Create a `.env` file inside the `backend` folder.
+## Environment Variables
+
+Create a `.env` file inside the **backend** folder.
 
 ```env
 PORT=5000
@@ -141,14 +158,24 @@ MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_secret_key
 ```
 
-### Start the Backend
+---
+
+## Run the Backend
 
 ```bash
 cd backend
 npm run dev
 ```
 
-### Start the Frontend
+or
+
+```bash
+node server.js
+```
+
+---
+
+## Run the Frontend
 
 ```bash
 npm start
@@ -156,12 +183,45 @@ npm start
 
 ---
 
+## Local URLs
+
+Frontend
+
+```
+http://localhost:3000
+```
+
+Backend
+
+```
+http://localhost:5000
+```
+
+---
+
 # 🔐 Authentication
 
-- JWT-based Authentication
+- JWT Authentication
 - Password Encryption using bcrypt
 - Protected Routes
 - Role-Based Authorization
+
+---
+
+# 📸 Application
+
+The application includes:
+
+- 🏠 Home Page
+- 🔐 Login & Registration
+- 👨‍🎓 Student Dashboard
+- 👨‍💼 Coordinator Dashboard
+- 👨‍💻 Admin Dashboard
+- 📚 Club Management
+- 📅 Event Management
+- 📢 Announcements
+- 🤝 Meeting Management
+- 📞 Contact Page
 
 ---
 
@@ -172,28 +232,20 @@ npm start
 - Attendance Tracking
 - Certificate Generation
 - Club Analytics Dashboard
-- Mobile Responsive UI
+- Mobile Responsive Design
 - Dark Mode Support
-
----
-
-# 🤝 Contributing
-
-Contributions are welcome!
-
-1. Fork the repository.
-2. Create a new branch.
-3. Commit your changes.
-4. Push to your branch.
-5. Open a Pull Request.
 
 ---
 
 # 👩‍💻 Author
 
-### **Kanisha D**
+## **Kanisha D**
 
+**B.Tech Information Technology Student**
 
+📧 **Email:** kanishadharmaraj@gmail.com
+
+🔗 **GitHub:** https://github.com/Kanishad2025
 
 ---
 
